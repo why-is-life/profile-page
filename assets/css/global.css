@@ -1,0 +1,30 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(144, 211, 245, 0.5);
+  color: #ffef8b;
+  margin-top: 20px;
+}

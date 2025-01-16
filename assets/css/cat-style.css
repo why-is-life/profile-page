@@ -1,0 +1,64 @@
+body {
+  position: relative;
+  background-image: url('../summoners-rift.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+/* Full-page container */
+.full-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text inside the container */
+ 
+}
+
+/* Text container styling */
+.text-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+    padding: 20px;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Image container styling */
+.image-container {
+    width: 60%; /* Constrain the container width */
+    max-width: 600px; /* Maximum width for larger screens */
+	max-height: 600px;
+    margin: 20px 0; /* Space between the text and the image */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the image within the container */
+	transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    cursor: pointer; /* Show pointer on hover to indicate clickability */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+

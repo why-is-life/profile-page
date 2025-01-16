@@ -1,0 +1,46 @@
+.navbar {
+    background: linear-gradient(to bottom, rgba(105, 125, 220, 1) 0%, rgba(182, 207, 234, 0) 70%);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.tab {
+    margin: 0 110px;
+}
+
+.tab a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+	font-weight: bold;
+    padding: 20px 30px;
+    transition: background-color 0.3s;
+}
+
+.tab a:hover {
+    background-color: rgba(105, 125, 220, 0.7);
+    border-radius: 7px;
+}
+
+.tab.active a {
+	text-decoration: none;
+    color: #ffef8b;
+    font-size: 22px;
+    padding: 20px 30px;
+    transition: background-color 0.3s;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
